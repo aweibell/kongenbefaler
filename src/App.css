@@ -1,0 +1,102 @@
+body {
+  background-image: url('./assets/stage-curtain-660078_1920.jpg');
+  background-repeat: no-repeat;
+}
+
+#root {
+  /*
+    max-width: 1920px;
+    max-height: 1080px;
+  */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tittel {
+  font-family: "Courier New", "Courier Std", "Courier", monospace;
+  font-size: 8vh;
+  color: #807879;
+  rotate: -22deg;
+  position: absolute;
+  left: 3%;
+  top: 7%;
+}
+
+.header {
+  height: 30%;
+}
+
+.stegPresentasjon {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  bottom: 0;
+  left: 0;
+  color: white
+}
+
+.bilderekke {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1vw;
+  transition-duration: 4s;
+}
+
+.bilete-div {
+  width: 18vw;
+  position: relative;
+  will-change: filter;
+}
+
+.bilete-div .poeng, .bilete-div .segl {
+  font-size: 75px;
+  text-shadow: 1px 1px 6px black;
+  color: white;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 35%);
+}
+
+.aktiv {
+  text-shadow: 3px 3px 4px yellow;
+  color: #ffffaa;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+.bilete {
+  width: 80%;
+}
+
+.footer {
+  position: absolute;
+  gap: 10px;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+}
+
+.neste {
+  height: 30px;
+  width: 60px;
+  border: solid thin black;
+  background-color: #242424;
+  color: #888888;
+}
