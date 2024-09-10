@@ -10,12 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@custom-react-hooks/use-key-press": "^1.4.19",
+    "@custom-react-hooks/use-key-press": "^1.5.1",
     "@formkit/auto-animate": "^0.8.1",
     "lodash": "^4.17.21",
     "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
